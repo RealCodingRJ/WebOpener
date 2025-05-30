@@ -4,6 +4,19 @@ fun main() {
 
         println(createTitle("PROCESS | WEBSITE Opener"))
 
+        println("Enter To Know: ")
+        val types = readln().toString();
+
+        if (types.isEmpty()) {
+
+            println("EMPTY...")
+        }
+
+        if (!types.isEmpty() || types == "/T") {
+            println(types())
+        }
+
+
         println("Enter CMD: ");
         val cmd = readln().toString()
 
@@ -16,10 +29,18 @@ fun main() {
             createRoute(e[0].toString(), e[1].toString())
         }
 
+
+
         break;
 
     }
 
+}
+
+fun types() {
+  val listOfTypes = listOf("Websites", "Command");
+
+    return listOfTypes.forEach { e -> e };
 }
 
 fun createTitle(title: String): String {
