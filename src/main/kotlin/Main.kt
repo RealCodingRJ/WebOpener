@@ -2,6 +2,8 @@ fun main() {
 
     while(true) {
 
+        println(createTitle("PROCESS | WEBSITE Opener"))
+
         println("Enter CMD: ");
         val cmd = readln().toString()
 
@@ -18,6 +20,10 @@ fun main() {
 
     }
 
+}
+
+fun createTitle(title: String): String {
+    return title;
 }
 
 fun createRoute(cmd:String, url: String,): Process {
