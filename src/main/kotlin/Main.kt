@@ -10,7 +10,10 @@ fun main() {
 
         val list = listOf(cmd, inputHost);
 
-        createRoute(list[0], list[1])
+        list.forEach { e ->
+            createRoute(e[0].toString(), e[1].toString())
+        }
+
         break;
 
     }
