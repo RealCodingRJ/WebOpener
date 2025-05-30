@@ -8,7 +8,9 @@ fun main() {
         println("Enter Website URL: ")
         val inputHost = readln().toString()
 
-        createRoute(cmd, inputHost)
+        val list = listOf(cmd, inputHost);
+
+        createRoute(list[0], list[1])
         break;
 
     }
